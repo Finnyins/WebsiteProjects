@@ -1,0 +1,102 @@
+/*Finn O'Brien*/
+/*Mediocre Card Game Website Style Sheet(Site #2)*/
+/*1/26/2022*/
+
+
+body {
+    background-image: linear-gradient(#656565, #E0E0E0);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .HDR_Main {
+    text-align: center;
+    padding: 25px;
+    color: black;
+    background-color: transparent;
+  }
+    
+  .HDR_Main img {
+    max-width: 100%;
+    max-height: auto;
+  }
+  
+  .BAR_Nav {
+    background-color: #222222;
+    overflow: auto;
+  }
+    
+  
+  .BAR_Nav a {
+    text-align: center;
+    padding: 14px 20px;
+    color: #757575;
+    float: left;
+    display: block;
+    text-decoration: none;
+  }
+    
+  
+  .BAR_Nav a.right {
+    float: right;
+  }
+    
+  
+  .BAR_Nav a:hover {
+     background-color: #C1C1C1;
+    color: black;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  
+  .DVD_Content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  
+  .CONT_Desc {
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    flex: 30%;
+  }
+    
+  
+  .CONT_Main {
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    flex: 70%;
+  }
+  
+  .BAR_Foot {
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 5px;
+  }
+
+  .CONT_HTP {
+      text-align: center;
+      color: black;
+      background-color: transparent;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .DVD_Content {
+      flex-direction: column;
+    }
+  }
+    
+    
+  @media screen and (max-width: 400px) {
+    .BAR_Nav a {
+      float: none;
+    }
+  }

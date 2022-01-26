@@ -1,0 +1,90 @@
+/*Finn O'Brien*/
+/*Personal Website Style Sheet (Site #1)*/
+/*1/25/2022*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.HDR_Main {
+  text-align: center;
+  padding: 30px;
+  background: #39FF14;
+  color: black;
+}
+  
+.HDR_Main h1 {
+  font-size: 40px;
+}
+
+.BAR_Nav {
+  background-color: #222222;
+  overflow: auto;
+}
+  
+
+.BAR_Nav a {
+  text-align: center;
+  padding: 14px 20px;
+  color: #39FF14;
+  float: left;
+  display: block;
+  text-decoration: none;
+}
+  
+
+.BAR_Nav a.right {
+  float: right;
+}
+  
+
+.BAR_Nav a:hover {
+   background-color: #39FF14;
+  color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.DVD_Content {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+
+.CONT_AboutMe {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  flex: 30%;
+}
+  
+
+.CONT_Main {
+  background-color: black;
+  color: #39FF14;
+  padding: 20px;
+  flex: 70%;
+}
+
+.BAR_Foot {
+  text-align: center;
+  background: #39FF14;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .DVD_Content {
+    flex-direction: column;
+  }
+}
+  
+  
+@media screen and (max-width: 400px) {
+  .BAR_Nav a {
+    float: none;
+  }
+}

@@ -87,6 +87,34 @@ body {
       color: black;
       background-color: transparent;
   }
+
+  .DVD_Cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .ITM_Card {
+    box-sizing: border-box;
+    border: 2px solid black;
+    max-width: fit-content;
+    min-width: 348px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .ITM_Card h4 {
+    text-align: center;
+  }
+
+  .ITM_Card p {
+    text-align: center;
+  }
+
+  .ITM_Card img {
+    margin: auto;
+    display: block;
+  }
   
   @media screen and (max-width: 700px) {
     .DVD_Content {

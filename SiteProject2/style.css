@@ -57,6 +57,7 @@ body {
   .DVD_Content {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
     
   

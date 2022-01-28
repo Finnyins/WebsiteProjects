@@ -25,7 +25,7 @@ body {
   }
   
   .BAR_Nav {
-    background-color: #222222;
+    background-color: #BEBEBE;
     overflow: auto;
   }
     
@@ -33,7 +33,7 @@ body {
   .BAR_Nav a {
     text-align: center;
     padding: 14px 20px;
-    color: #757575;
+    color: black;
     float: left;
     display: block;
     text-decoration: none;

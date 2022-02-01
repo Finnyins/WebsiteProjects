@@ -3,6 +3,8 @@
 /*1/26/2022*/
 
 
+
+/*The body selector. Sets the website's styling and makes sure it stays consistent between pages*/
 body {
     background-image: linear-gradient(#656565, #E0E0E0);
     height: 100%;
@@ -12,24 +14,27 @@ body {
     background-attachment: fixed;
   }
   
+  /*The header selector. Sets the header's styling for all pages*/
   .HDR_Main {
     text-align: center;
     padding: 25px;
     color: black;
     background-color: transparent;
   }
-    
+  
+/*The header's image selector. Sets the style of the logo image inside of the header*/
   .HDR_Main img {
     max-width: 100%;
     max-height: auto;
   }
   
+/*The navbar selector. Sets the background color and overflow properties of the navbar*/
   .BAR_Nav {
     background-color: #BEBEBE;
     overflow: auto;
   }
     
-  
+/*The navbar link selector. Sets the properties of the individual links in the navbar*/
   .BAR_Nav a {
     text-align: center;
     padding: 14px 20px;
@@ -39,28 +44,31 @@ body {
     text-decoration: none;
   }
     
-  
+/*The navbar right-aligned link selector. Sets the alignment of the link to align to the right of the navbar*/
   .BAR_Nav a.right {
     float: right;
   }
     
-  
+/*The navbar link hover selector. Changes the coloring of navbar links when hovered over*/ 
   .BAR_Nav a:hover {
      background-color: #C1C1C1;
     color: black;
   }
-  
+
+/*The universal selector. Sets the site's box-sizing property*/
   * {
       box-sizing: border-box;
   }
   
+
+/*The content divider selector. Sets the flexbox properties of the container*/
   .DVD_Content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
     
-  
+/*The description selector. Sets the flex attributes, coloring, and padding of the description div*/
   .CONT_Desc {
     background-color: transparent;
     color: black;
@@ -68,7 +76,7 @@ body {
     flex: 30%;
   }
     
-  
+/*The main content selector. Sets the flex attributes, coloring, and padding of the main content div*/
   .CONT_Main {
     background-color: transparent;
     color: black;
@@ -76,6 +84,7 @@ body {
     flex: 70%;
   }
   
+/*The footer selector. Sets the text alignment, sizing, and coloring of the footer*/
   .BAR_Foot {
     text-align: center;
     color: white;
@@ -83,18 +92,21 @@ body {
     padding: 5px;
   }
 
+/*The "How to Play" content selector. Sets the coloring and text alignment of the "How to Play" div*/
   .CONT_H2P {
       text-align: center;
       color: black;
       background-color: transparent;
   }
 
+/*The "Cards Container" selector. Sets the flex attributes of the "Cards" container*/
   .DVD_Cards {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
+/*The "Card" item selector. Sets the sizing, border, and positioning of each "Card" item*/
   .ITM_Card {
     box-sizing: border-box;
     border: 2px solid black;
@@ -104,26 +116,30 @@ body {
     margin: 10px;
   }
 
+/*The "Card" header selector. Sets the text alignment of the headers inside of the "Card" items*/
   .ITM_Card h4 {
     text-align: center;
   }
 
+/*The "Card" paragraph selector. Sets the text alignment of the paragraphs inside of the "Card" items*/
   .ITM_Card p {
     text-align: center;
   }
 
+/*The "Card" image selector. Sets the positioning of the images inside of the "Card" items*/
   .ITM_Card img {
     margin: auto;
     display: block;
   }
-  
+ 
+/*A media rule. Sets the dynamic resizing properties according to the display size (700px Max)*/
   @media screen and (max-width: 700px) {
     .DVD_Content {
       flex-direction: column;
     }
   }
     
-    
+/*A media rule. Sets the dynamic resizing properties according to the display size (400px Max)*/   
   @media screen and (max-width: 400px) {
     .BAR_Nav a {
       float: none;

@@ -3,82 +3,91 @@
 /*1/25/2022*/
 
 
+/*Body styling*/
 body {
   margin: 0;
   padding: 0;
 }
 
+/*Header styling*/
 .HDR_Main {
   text-align: center;
   padding: 30px;
-  background: #39FF14;
+  background: linear-gradient(#39FF14, #145807);
   color: black;
 }
 
+/*Navbar styling*/
 .BAR_Nav {
-  background-color: #222222;
+  background: linear-gradient(#145807, #39FF14);
   overflow: auto;
 }
   
-
+/*Navbar link styling*/
 .BAR_Nav a {
   text-align: center;
   padding: 14px 20px;
-  color: #39FF14;
+  color: black;
   float: left;
   display: block;
   text-decoration: none;
 }
   
-
+/*Navbar link right-adjustment styling*/
 .BAR_Nav a.right {
   float: right;
 }
   
-
+/*Navbar hover styling*/
 .BAR_Nav a:hover {
-   background-color: #39FF14;
+   background-color: #9dff8a;
   color: black;
 }
 
+/*Universal page styling*/
 * {
     box-sizing: border-box;
 }
 
+/*Content container styling*/
 .DVD_Content {
   display: flex;
   flex-wrap: wrap;
 }
   
-
+/*"About me" content styling*/
 .CONT_AboutMe {
   background-color: #333333;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 20px;
+  padding-bottom: 200px;
   flex: 30%;
 }
   
-
+/*Main content styling*/
 .CONT_Main {
-  background-color: black;
-  color: #39FF14;
+  background: linear-gradient(to bottom left, #26fc00, #0e5300);
+  color: black;
   padding: 20px;
+  padding-bottom: 200px;
   flex: 70%;
 }
 
+/*Footer styling*/
 .BAR_Foot {
   text-align: center;
-  background: #39FF14;
+  background: linear-gradient(#39FF14, #145807);
   padding: 20px;
 }
 
+/*Website organization based on screen size*/
 @media screen and (max-width: 700px) {
   .DVD_Content {
     flex-direction: column;
   }
 }
   
-  
+/*More website organization based on screen size*/ 
 @media screen and (max-width: 400px) {
   .BAR_Nav a {
     float: none;

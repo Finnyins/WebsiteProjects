@@ -51,8 +51,8 @@ body {
     
 /*The navbar link hover selector. Changes the coloring of navbar links when hovered over*/ 
   .BAR_Nav a:hover {
-     background-color: #C1C1C1;
-    color: black;
+     background-color: black;
+    color: white;
   }
 
 /*The universal selector. Sets the site's box-sizing property*/

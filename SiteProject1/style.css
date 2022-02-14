@@ -60,7 +60,7 @@ body {
   background-color: #333333;
   color: rgb(255, 255, 255);
   padding: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 107px;
   flex: 30%;
 }
   
@@ -69,7 +69,7 @@ body {
   background: linear-gradient(to bottom left, #26fc00, #0e5300);
   color: black;
   padding: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 107px;
   flex: 70%;
 }
 

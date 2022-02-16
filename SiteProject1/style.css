@@ -19,7 +19,7 @@ body {
 
 /*Navbar styling*/
 .BAR_Nav {
-  background: linear-gradient(#145807, #39FF14);
+  background: linear-gradient(#145807, #39FF14, #145807);
   overflow: auto;
 }
   
@@ -40,8 +40,9 @@ body {
   
 /*Navbar hover styling*/
 .BAR_Nav a:hover {
-   background-color: #9dff8a;
-  color: black;
+  background: linear-gradient(to bottom, #145807, #0e5300, #145807);
+  box-shadow: 0 4px 8px 0 black;
+  color: white;
 }
 
 /*Universal page styling*/

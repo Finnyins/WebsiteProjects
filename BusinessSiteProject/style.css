@@ -1,0 +1,201 @@
+/*Finn O'Brien*/
+/*Business Website Style Sheet*/
+/*2/24/2022*/
+
+
+
+/*The body selector. Sets the website's styling and makes sure it stays consistent between pages*/
+body {
+    background-image: linear-gradient(#eeeeee, #000000);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+  }
+  
+  /*The header selector. Sets the header's styling for all pages*/
+  .HDR_Main {
+    text-align: center;
+    padding: 25px;
+    color: black;
+    background-color: transparent;
+  }
+  
+/*The header's image selector. Sets the style of the logo image inside of the header*/
+  .HDR_Main img {
+    max-width: 60%;
+    max-height: auto;
+  }
+  
+/* The navigation menu slider */
+.OLY_Nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, #b9b9b9, #656565);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 black;
+  }
+  
+  /* The navigation menu links */
+  .OLY_Nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .OLY_Nav a:hover {
+    color: #ffffff;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .OLY_Nav .BTN_Close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .BTN_Open {
+      position: fixed;
+      z-index: 1;
+      font-size: 50px;
+      cursor: pointer;
+      padding-left: 25px;
+      padding: 15px;
+  }
+
+/*The universal selector. Sets the site's box-sizing property*/
+  * {
+      box-sizing: border-box;
+  }
+  
+
+/*The content divider selector. Sets the flexbox properties of the container*/
+  .DVD_Content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: linear-gradient(to bottom right, #656565, #E0E0E0, #656565);
+  }
+
+  .CONT_Products {
+    background: linear-gradient(to top, #CCCCCC, #6d6d6d);
+    border: 5px black inset;
+    color: black;
+    padding: 20px;
+    flex: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CONT_PageTitle {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+  }
+  .CONT_Pagetitle h1 {
+      text-align: center;
+  }
+  
+/*The footer selector. Sets the text alignment, sizing, and coloring of the footer*/
+  .BAR_Foot {
+    text-align: center;
+    color: white;
+    background: black;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding: 5px;
+  }
+
+/*The "Product" item selector. Sets the sizing, border, and positioning of each "Product" item*/
+  .ITM_Product {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 black;
+    max-width: 250;
+    padding: 20px;
+    margin: 10px;
+  }
+
+/*The "Card" header selector. Sets the text alignment of the headers inside of the "Card" items*/
+  .ITM_Product h4 {
+    text-align: center;
+  }
+
+/*The "Card" paragraph selector. Sets the text alignment of the paragraphs inside of the "Card" items*/
+  .ITM_Product p {
+    text-align: center;
+  }
+
+/*The "Card" image selector. Sets the positioning of the images inside of the "Card" items*/
+  .ITM_Product img {
+    margin: auto;
+    display: block;
+  }
+
+  .ITM_Product button {
+      margin: auto;
+      display: block;
+      font-size: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
+  .DVD_Drops {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .TBL_Rates {
+    text-align: center;
+    float: none;
+    margin: 30px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 black;
+    background: linear-gradient(to bottom, #656565, #E0E0E0)
+  }
+
+  .TBL_Rates td, .TBL_Rates tr {
+    border: 2px inset black;
+    padding: 5px;
+  }
+
+  .TBL_Rates th {
+    border: 2px outset black;
+    padding: 7px;
+  }
+ 
+/*A media rule. Sets the dynamic resizing properties according to the display size (700px Max)*/
+  @media screen and (max-width: 700px) {
+    .DVD_Content {
+      flex-direction: column;
+    }
+  }
+    
+/*A media rule. Sets the dynamic resizing properties according to the display size (400px Max)*/   
+  @media screen and (max-width: 400px) {
+    .BAR_Nav a {
+      float: none;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

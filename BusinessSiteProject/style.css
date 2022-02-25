@@ -230,6 +230,10 @@ body {
     .DIV_Content {
       flex-direction: column;
     }
+
+    .CONT_Products {
+      flex-direction: column;
+    }
   }
     
 /*A media rule. Sets the dynamic resizing properties according to the display size (400px Max)*/   

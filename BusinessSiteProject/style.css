@@ -84,16 +84,26 @@ body {
   
 
 /*The content divider selector. Sets the flexbox properties of the container*/
-  .DVD_Content {
+  .DIV_Content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     background: linear-gradient(to bottom right, #656565, #E0E0E0, #656565);
   }
 
+  .CONT_About {
+    flex: 30%;
+    padding: 20px;
+    text-overflow: wrap;
+  }
+
+  .CONT_Featured {
+    flex: 70%;
+    border: 5px black inset;
+  }
+
   .CONT_Products {
     background: linear-gradient(to top, #CCCCCC, #6d6d6d);
-    border: 5px black inset;
     color: black;
     display: flex;
     flex-direction: row;
@@ -217,7 +227,7 @@ body {
  
 /*A media rule. Sets the dynamic resizing properties according to the display size (700px Max)*/
   @media screen and (max-width: 700px) {
-    .DVD_Content {
+    .DIV_Content {
       flex-direction: column;
     }
   }

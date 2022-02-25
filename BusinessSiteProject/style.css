@@ -95,8 +95,6 @@ body {
     background: linear-gradient(to top, #CCCCCC, #6d6d6d);
     border: 5px black inset;
     color: black;
-    padding: 20px;
-    flex: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -113,6 +111,40 @@ body {
       text-align: center;
   }
   
+  .CONT_Product {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 black;
+    max-width: 250;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .CONT_Product > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
+  .CONT_Product img {
+    max-width: 50%;
+    max-height: auto;
+  }
+
+  .CONT_Product button {
+    font-size: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(to bottom, #075200, #0c9200, #075200)
+  }
+
+  .CONT_Product p {
+    font-size: 25px;
+    color: green;
+  }
+
 /*The footer selector. Sets the text alignment, sizing, and coloring of the footer*/
   .BAR_Foot {
     text-align: center;
@@ -140,6 +172,7 @@ body {
 /*The "Card" paragraph selector. Sets the text alignment of the paragraphs inside of the "Card" items*/
   .ITM_Product p {
     text-align: center;
+    color: green;
   }
 
 /*The "Card" image selector. Sets the positioning of the images inside of the "Card" items*/
@@ -154,6 +187,7 @@ body {
       font-size: 30px;
       padding-left: 50px;
       padding-right: 50px;
+      background: linear-gradient(to bottom, #075200, #0c9200, #075200)
   }
 
   .DVD_Drops {
